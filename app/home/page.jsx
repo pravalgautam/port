@@ -118,7 +118,7 @@ const Page = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.7, type: "spring", stiffness: 50 }}
-              className="flex items-center justify-center w-full md:w-1/2 relative pb-8 md:pb-16 md:pt-24"
+              className="flex items-center justify-center w-full md:w-1/2 relative pb-20 md:pt-24"
             >
               <motion.div 
                 initial={{ y: 50 }}

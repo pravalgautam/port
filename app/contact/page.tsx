@@ -37,9 +37,15 @@ const Page = () => {
     }
   };
 
+  const colorMap = {
+    'red-500': 'bg-red-500',
+    'yellow-500': 'bg-yellow-500',
+    'green-500': 'bg-green-500'
+};
+
   return (
     <div className="min-h-screen w-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center">
-      <div className="bg-white/95 backdrop-blur-sm w-full max-w-4xl h-full rounded-xl shadow-2xl overflow-hidden">
+      <div className="h-[1300px] bg-white/95 backdrop-blur-sm w-full max-w-4xl h-full rounded-xl shadow-2xl overflow-hidden">
         
         {/* Navigation Bar */}
         <motion.div 
@@ -54,7 +60,7 @@ const Page = () => {
                 key={index}
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 transition={{ duration: 0.5 }}
-                className={`w-3 h-3 bg-${color} rounded-full`}
+                className={`w-3 h-3 ${colorMap[color]}  rounded-full`}
               ></motion.div>
             ))}
           </div>

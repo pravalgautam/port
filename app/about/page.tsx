@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="min-h-screen w-screen bg-gradient-to-br from-black via-gray-900 to-black"> 
+    <div className="min-h-screen w-screen bg-gradient-to-br from-black via-gray-900 to-black "> 
       {/* Main Content */}
-      <div className="h-[1300px] flex items-center justify-center py-2 px-2 sm:py-28 sm:px-32 md:py-[6rem] md:px-[15rem]">
+      <div className=" flex items-center justify-center  px-2 py-40  md:py-[6rem] md:px-[15rem]">
  
         <motion.div 
           initial={{ opacity: 0, y: 100 }}
@@ -49,7 +49,7 @@ const Page = () => {
           </motion.div>
 
           {/* Main Content */}
-          <div className="flex flex-col items-center h-full w-full py-12">
+          <div className="flex flex-col items-center h-full w-full py-32">
             
             {/* About Me Section */}
             <motion.div 
